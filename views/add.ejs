@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>add detail</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+        <div class="jumbotron text-center">
+                <h1>Add Details</h1>
+                <p>Handle your database</p>
+        </div>
+
+        <div class="container">
+                <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
+                                <form action="/data" method="POST">
+                                        <fieldset>
+                                                <label for="name" class="form-group">Name: </label>
+                                                <input type="text" id="name" class="form-control" name="name" />
+                                                <br/>
+                                                <label for="email" class="form-group">Mobile: </label>
+                                                <input type="mobile" id="mobile" class="form-control" name="mobile" />
+                                                <br/>
+                                                <label for="description" class="form-group">Product: </label>
+                                                <input type="text" id="product" class="form-control" name="product"></input>
+                                                <br/>
+                                                <input type="submit" class="btn btn-default" value="ADD DATA" />
+                                        </fieldset>
+                                </form>
+                        </div>
+                </div>
+        </div>
+        <div class="col-sm-3"></div>
+        </div>
+
+
+
+</body>
+
+</html>

@@ -5,16 +5,8 @@
     <title>Emp detail</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
-     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
-    
-    
 </head>
 
 <body>
@@ -31,11 +23,13 @@
         <a href="add">
             <button class="btn btn-default">Add New</button>
         </a>
+        <input type="text" id="id" class="form-control" name="id" style="float: right; width: 20%" />
+        <button class="fa fa-search" style="float: right; font-size: 195%; margin-right: -20%"></button>
     </div>
     </br>
     <div class="container">
 
-        <table id="table" class="table table-striped table-bordered">
+        <table id="table" class="table table-hover table-bordered">
             <thead>
                 <tr>
                     <th>id</th>
@@ -82,10 +76,5 @@
 
 
 </body>
-<script>
-    $(document).ready(function() {
-    $('#table').DataTable();
-} );
-</script>
 
 </html>

@@ -93,7 +93,7 @@ router.get('/edit', function (req, res, next) {
 
 
 router.post('/dataedit', function (req, res) {
-  var id = req.body.id;
+   var id = req.body.id;
   console.log(id);
   var username = req.body.name;
   console.log(username);

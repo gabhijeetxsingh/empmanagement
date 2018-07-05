@@ -16,25 +16,25 @@
                 <p>Handle your database</p>
         </div>
 
-        <div class="container">
+        <div class="container"> 
                 <div class="row">
                         <div class="col-sm-3"></div>
                         <div class="col-sm-6">
                                 <form action="/dataedit" method="POST">
                                         <fieldset>
-                                                <%  rows.map(i=>{ %>
-                                                        <input type="hidden" id="name" class="form-control" name="id" value="<%= i.id %>" />
+                                                        <input type="hidden" id="isedit" class="form-control" name="isedit" value="<%= isedit %>" />
+                                                        <input type="hidden" id="name" class="form-control" name="id" value="<%= rows.id %>" />
                                                         <label for="name" class="form-group">Name: </label>
-                                                        <input type="text" id="name" class="form-control" name="name" value="<%= i.name %>" />
+                                                        <input type="text" id="name" class="form-control" name="name" value="<%= rows.name %>" !important/>
                                                         <br/>
                                                         <label for="email" class="form-group">Mobile: </label>
-                                                        <input type="tel" id="mobile" class="form-control" name="mobile" pattern="^\d{10}$"  value="<%= i.mobile %>" />
+                                                        <input type="tel" id="mobile" class="form-control" name="mobile" pattern="^\d{10}$"  value="<%= rows.mobile %>" !important/>
                                                         <br/>
                                                         <label for="description" class="form-group">Product: </label>
-                                                        <input type="text" id="product" class="form-control" name="product" value="<%= i.product %>"></input>
+                                                        <input type="text" id="product" class="form-control" name="product" value="<%= rows.product %>" !important></input>
                                                         <br/>
                                                         <input type="submit" class="btn btn-default" value="UPDATE DATA" />
-                                                        <% }) %>
+                                                        
                                         </fieldset>
                                 </form>
                         </div>

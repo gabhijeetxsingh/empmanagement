@@ -23,8 +23,10 @@
         <a href="add">
             <button class="btn btn-default">Add New</button>
         </a>
-        <input type="text" id="id" class="form-control" name="id" style="float: right; width: 20%" />
-        <button class="fa fa-search" style="float: right; font-size: 195%; margin-right: -20%"></button>
+        <form action="/" method="GET">
+        <input type="text" id="id" name="searchstring" class="form-control" name="id" style="float: right;width: 20%;margin-top: -31px;"/>
+        <button type="submit" class="fa fa-search" style="float: right; font-size: 195%; margin-right: -20%;margin-top: -31px;" /></button>
+    </form>
     </div>
     </br>
     <div class="container">
@@ -63,7 +65,7 @@
                             </a>
                         </td>
                         <td>
-                            <a href="/delete?id=<%= i.id %>">
+                            <a href="/delete?id=<%= i.id %>&d=del">
                                 <div class="fa fa-trash"></div>
                             </a>
                         </td>
